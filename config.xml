@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0">
+
+<name>Travel Alerts</name>
+<author>Keanu Lee</author>
+<description>
+	Check US Travel Warnings and Alerts
+</description>
+
+<icon src="images/icon.png"/>
+<content src="index.html"/>
+
+<access uri="*" />
+<rim:permissions>
+	<rim:permit>read_geolocation</rim:permit>
+</rim:permissions>
+<feature id="blackberry.app" required="true" version="1.0.0.0"/>
+<feature id="blackberry.identity" required="true" version="1.0.0.0"/>
+<feature id="blackberry.invoke.BrowserArguments" required="true" version="1.0.0.0"/>
+<feature id="blackberry.invoke" required="true" version="1.0.0.0"/>
+
+</widget>

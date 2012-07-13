@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">    
+    <title>Travel Alerts</title> 
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.0.1.min.css" />
+    <script src="jquery/jquery-1.7.1.min.js"></script>
+    <script src="jquery/jquery.mobile-1.0.1.min.js"></script>
+    <script src="main.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" data-theme="a" id="mainPage">
+    <div data-role="header" style="position: fixed; z-index: 10;">
+		<a id="refresh" data-icon="refresh"><br /></a>
+        <h1>Travel Alerts</h1>
+		<a id="locate" data-theme="e">Locate</a>
+    </div>
+
+    <div data-role="content" style="padding-top: 45px;"><br />
+        <ul id="linksList" data-role="listview" data-inset="true" data-filter="true"></ul>
+    </div>
+
+    <div data-role="footer">
+		<a data-icon="info" href="#about">About</a>
+        <span id="lastUpdate"></span>
+    </div>
+</div>
+
+<div data-role="page" id="contentPage">
+    <div data-role="header" style="position: fixed; z-index: 10;">
+        <a data-rel="back" data-icon="arrow-l">Home</a>
+        <h1></h1>
+    </div>
+
+    <div data-role="content" id="entryText" style="padding-top: 45px;">
+    </div> 
+</div>
+
+<div data-role="page" id="about">
+    <div data-role="header" style="position: fixed; z-index: 10;">
+        <a data-rel="back" data-icon="arrow-l">Home</a>
+        <h1>Travel Alerts</h1>
+    </div>
+
+    <div data-role="content" id="entryText" style="padding-top: 45px; text-align: center;">
+		Created by: Keanu Lee<br /><br />
+	
+		Travel Warnings and Alerts provided by:<br />
+		US Department of State<br />
+		<a onclick="openLink('http://travel.state.gov/');">http://travel.state.gov/</a><br /><br />
+	
+		Plane icon provided by:<br />
+		Babasse<br />
+		<a onclick="openLink('http://igloo.crystalxp.net/babasse');">http://igloo.crystalxp.net/babasse</a>
+    </div> 
+</div>
+
+</body>
+</html>

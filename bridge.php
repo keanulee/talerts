@@ -1,0 +1,1 @@
+<?php readfile($_GET["fwd"]) ?>

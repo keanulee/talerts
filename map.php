@@ -1,0 +1,1 @@
+<?php readfile('http://maps.googleapis.com/maps/api/geocode/json?latlng='.$_GET["latlng"].'&sensor=true') ?>
